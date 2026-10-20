@@ -1,0 +1,44 @@
+:root {
+    --bg: #fff;
+    --fg:#222; 
+    --btn:#eee;
+    --orange: #ff8c00; box-sizing:border-box;
+    padding-top: env(safe-area-inset-top, 0px);
+    padding-bottom: env(safe-area-inset-bottom, 0px); 
+}
+html, body {
+    height: 100%;
+    margin: 0;
+    background: var(--bg);
+    color: var(--fg);
+    font-family: system-ui,sans-serif;
+    overflow: hidden; 
+}
+#palya {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+#nyil { 
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: 0;
+    height: 0;
+    z-index: 3;
+    margin-left: -12px;
+    margin-top: 0px;
+    border-left: 12px solid transparent;
+    border-right: 12px solid transparent;
+    border-bottom: 24px solid var(--orange);
+    transition: margin 0.12s linear, transform 0.12s;
+}
+.csik {
+    position: absolute;
+    background: var(--orange);
+    z-index: 1;
+    border-radius: 2px;
+}
+
+
